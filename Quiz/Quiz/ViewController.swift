@@ -48,7 +48,5 @@ class ViewController: UIViewController {
 
         questionLabel.text = question[currentQuestionIndex]
     }
-
-
 }
 
