@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,13 +63,15 @@
                             <constraint firstItem="JB8-TB-XYq" firstAttribute="centerX" secondItem="5st-4d-M05" secondAttribute="centerX" id="wzn-UI-6wp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Rkz-QE-Gmo"/>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" selectedImage="ConvertIcon" id="Rkz-QE-Gmo">
+                        <color key="badgeColor" systemColor="systemGray2Color"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="55" y="10"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="v90-YT-d4D">
             <objects>
                 <viewController id="m8S-wR-dme" sceneMemberID="viewController">
@@ -78,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <standardMapConfiguration key="preferredConfiguration"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Item" id="mLX-Qf-fld"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" selectedImage="MapIcon" id="mLX-Qf-fld"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6v-NF-1BV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,8 +97,8 @@
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                     </tabBar>
                     <connections>
-                        <segue destination="m8S-wR-dme" kind="relationship" relationship="viewControllers" id="Woh-c6-wLc"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="OyL-kz-qtF"/>
+                        <segue destination="m8S-wR-dme" kind="relationship" relationship="viewControllers" id="Woh-c6-wLc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWd-0M-zBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -105,6 +107,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ConvertIcon" width="48.333332061767578" height="32.333332061767578"/>
+        <image name="MapIcon" width="48.333332061767578" height="32.333332061767578"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
