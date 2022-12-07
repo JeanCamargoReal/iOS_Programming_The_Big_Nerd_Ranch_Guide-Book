@@ -16,6 +16,7 @@
 		C579A395293D123100A876E1 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579A394293D123100A876E1 /* WorldTrotterTests.swift */; };
 		C579A39F293D123200A876E1 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579A39E293D123200A876E1 /* WorldTrotterUITests.swift */; };
 		C579A3A1293D123200A876E1 /* WorldTrotterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579A3A0293D123200A876E1 /* WorldTrotterUITestsLaunchTests.swift */; };
+		C5F5037329410A1100646515 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5037229410A1100646515 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C579A39A293D123200A876E1 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579A39E293D123200A876E1 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		C579A3A0293D123200A876E1 /* WorldTrotterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5F5037229410A1100646515 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				C579A37D293D122F00A876E1 /* AppDelegate.swift */,
 				C579A37F293D122F00A876E1 /* SceneDelegate.swift */,
 				C579A381293D122F00A876E1 /* ViewController.swift */,
+				C5F5037229410A1100646515 /* MapViewController.swift */,
 				C579A383293D122F00A876E1 /* Main.storyboard */,
 				C579A386293D123100A876E1 /* Assets.xcassets */,
 				C579A388293D123100A876E1 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				C579A382293D122F00A876E1 /* ViewController.swift in Sources */,
 				C579A37E293D122F00A876E1 /* AppDelegate.swift in Sources */,
 				C579A380293D122F00A876E1 /* SceneDelegate.swift in Sources */,
+				C5F5037329410A1100646515 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
