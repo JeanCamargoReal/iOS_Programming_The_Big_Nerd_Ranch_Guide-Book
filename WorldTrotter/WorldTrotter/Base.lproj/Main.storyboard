@@ -52,6 +52,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="FfN-gv-tyC" firstAttribute="top" secondItem="kaV-j9-vAY" secondAttribute="bottom" constant="8" id="0tO-wT-xQG"/>
                             <constraint firstItem="gmL-a1-w3y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5A4-id-7RV"/>
@@ -64,17 +65,26 @@
                             <constraint firstItem="Yk3-u0-KKC" firstAttribute="top" secondItem="FfN-gv-tyC" secondAttribute="bottom" constant="8" id="dty-6S-UGj"/>
                             <constraint firstItem="gmL-a1-w3y" firstAttribute="centerX" secondItem="kaV-j9-vAY" secondAttribute="centerX" id="wbZ-uu-ABn"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RqA-Dy-1Yg" appends="YES" id="oRa-Vs-qwy"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" selectedImage="ConvertIcon" id="Rkz-QE-Gmo">
                         <color key="badgeColor" systemColor="systemGray2Color"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="celsiusLabel" destination="Yk3-u0-KKC" id="74g-Wh-Lal"/>
+                        <outlet property="textField" destination="gmL-a1-w3y" id="dQY-fh-JdJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RqA-Dy-1Yg">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="HTK-fk-jck"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="55" y="10"/>
+            <point key="canvasLocation" x="-298" y="4"/>
         </scene>
         <!--Map-->
         <scene sceneID="v90-YT-d4D">
