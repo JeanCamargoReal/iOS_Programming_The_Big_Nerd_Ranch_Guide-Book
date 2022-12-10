@@ -12,7 +12,12 @@ class ConversionViewController: UIViewController {
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
 
-    var fahrenheitValue: Measurement<UnitTemperature>?
+    var fahrenheitValue: Measurement<UnitTemperature>? {
+        didSet {
+            updateCelsiusLabel()
+        }
+    }
+
     var celsiusValue: Measurement<UnitTemperature>? {
         if let fahrenheitValue = fahrenheitValue {
             return fahrenheitValue.converted(to: .celsius)
@@ -25,6 +30,14 @@ class ConversionViewController: UIViewController {
         super.viewDidLoad()
 
         print("ConversionViewController loaded its view.")
+    }
+
+    func updateCelsiusLabel() {
+        if let celsiusValue = celsiusValue {
+            celsiusLabel.text = "\(celsiusValue.value)"
+        } else {
+            celsiusLabel.text = "???"
+        }
     }
 
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
