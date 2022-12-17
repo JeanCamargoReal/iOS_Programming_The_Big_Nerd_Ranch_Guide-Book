@@ -26,6 +26,16 @@ class ConversionViewController: UIViewController {
         }
     }
 
+    let numberFormatter: NumberFormatter = {
+        let nf = NumberFormatter()
+        nf.numberStyle = .decimal
+        nf.minimumFractionDigits = 0
+        nf.maximumIntegerDigits = 0
+        nf.maximumFractionDigits = 1
+
+        return nf
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
