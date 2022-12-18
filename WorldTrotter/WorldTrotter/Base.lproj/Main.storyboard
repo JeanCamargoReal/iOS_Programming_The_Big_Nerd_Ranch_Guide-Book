@@ -11,6 +11,12 @@
         <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RqA-Dy-1Yg">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="HTK-fk-jck"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -78,28 +84,23 @@
                         <outlet property="textField" destination="gmL-a1-w3y" id="dQY-fh-JdJ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="RqA-Dy-1Yg">
-                    <connections>
-                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="HTK-fk-jck"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="636" y="744"/>
         </scene>
         <!--Map-->
         <scene sceneID="v90-YT-d4D">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6v-NF-1BV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="m8S-wR-dme" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" selectedImage="MapIcon" id="mLX-Qf-fld"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m6v-NF-1BV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1407" y="743"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="T6c-iG-kAj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWd-0M-zBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rdp-3d-7bW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fOJ-Hy-ZSh">
@@ -112,7 +113,6 @@
                         <segue destination="m8S-wR-dme" kind="relationship" relationship="viewControllers" id="Woh-c6-wLc"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vWd-0M-zBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1008.8" y="3.6945812807881775"/>
         </scene>
