@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
@@ -46,7 +46,6 @@ class ConversionViewController: UIViewController {
 
     func updateCelsiusLabel() {
         if let celsiusValue = celsiusValue {
-//            celsiusLabel.text = "\(celsiusValue.value)"
             celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
         } else {
             celsiusLabel.text = "???"
@@ -63,6 +62,13 @@ class ConversionViewController: UIViewController {
 
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("Current text: \(String(describing: textField.text))")
+        print("Replacement text: \(string)")
+
+        return true
     }
 }
 
