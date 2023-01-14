@@ -17,6 +17,7 @@
 		C5DA01F0297360060073FACD /* LootLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA01EF297360060073FACD /* LootLoggerUITestsLaunchTests.swift */; };
 		C5DA01FD2973615F0073FACD /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA01FC2973615F0073FACD /* ItemsViewController.swift */; };
 		C5DA01FF297362D80073FACD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA01FE297362D80073FACD /* Item.swift */; };
+		C5DA0201297368090073FACD /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA0200297368090073FACD /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C5DA01EF297360060073FACD /* LootLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C5DA01FC2973615F0073FACD /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		C5DA01FE297362D80073FACD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C5DA0200297368090073FACD /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				C5DA01CC297360050073FACD /* AppDelegate.swift */,
 				C5DA01CE297360050073FACD /* SceneDelegate.swift */,
 				C5DA01FE297362D80073FACD /* Item.swift */,
+				C5DA0200297368090073FACD /* ItemStore.swift */,
 				C5DA01FC2973615F0073FACD /* ItemsViewController.swift */,
 				C5DA01D2297360050073FACD /* Main.storyboard */,
 				C5DA01D5297360060073FACD /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 				C5DA01FF297362D80073FACD /* Item.swift in Sources */,
 				C5DA01FD2973615F0073FACD /* ItemsViewController.swift in Sources */,
 				C5DA01CD297360050073FACD /* AppDelegate.swift in Sources */,
+				C5DA0201297368090073FACD /* ItemStore.swift in Sources */,
 				C5DA01CF297360050073FACD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
