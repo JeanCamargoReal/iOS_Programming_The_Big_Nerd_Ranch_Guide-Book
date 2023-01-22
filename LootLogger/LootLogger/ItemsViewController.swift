@@ -9,4 +9,8 @@ import UIKit
 
 class ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return itemStore.allItems.count
+    }
 }
