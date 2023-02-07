@@ -80,6 +80,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5670B3E2992869500D2D214 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5DA01FE297362D80073FACD /* Item.swift */,
+				C5DA0200297368090073FACD /* ItemStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5670B3F299286AE00D2D214 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5DA01CC297360050073FACD /* AppDelegate.swift */,
+				C5DA01FC2973615F0073FACD /* ItemsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5670B40299286F900D2D214 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5DA01D2297360050073FACD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C5DA01C0297360040073FACD = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +129,10 @@
 		C5DA01CB297360050073FACD /* LootLogger */ = {
 			isa = PBXGroup;
 			children = (
-				C5DA01CC297360050073FACD /* AppDelegate.swift */,
+				C5670B3E2992869500D2D214 /* Model */,
+				C5670B40299286F900D2D214 /* View */,
+				C5670B3F299286AE00D2D214 /* Controller */,
 				C5DA01CE297360050073FACD /* SceneDelegate.swift */,
-				C5DA01FE297362D80073FACD /* Item.swift */,
-				C5DA0200297368090073FACD /* ItemStore.swift */,
-				C5DA01FC2973615F0073FACD /* ItemsViewController.swift */,
-				C5DA01D2297360050073FACD /* Main.storyboard */,
 				C5DA01D5297360060073FACD /* Assets.xcassets */,
 				C5DA01D7297360060073FACD /* LaunchScreen.storyboard */,
 				C5DA01DA297360060073FACD /* Info.plist */,

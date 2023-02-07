@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create an ItemStore
         let itemStore = ItemStore()
-        
+
         // Access the ItemsViewController and set its item store
         let itemsController = window!.rootViewController as! ItemsViewController
         itemsController.itemStore = itemStore
