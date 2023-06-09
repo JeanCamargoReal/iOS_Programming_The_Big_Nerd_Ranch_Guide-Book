@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wvh-Wi-OyO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wvh-Wi-OyO">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdQ-Pr-bF5">
-                                    <rect key="frame" x="8" y="12.666666666666664" width="184.66666666666666" height="35"/>
+                                    <rect key="frame" x="8" y="15" width="184.66666666666666" height="30"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                                     <connections>
@@ -28,7 +29,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr7-3A-Bg3">
-                                    <rect key="frame" x="200.66666666666663" y="12.666666666666664" width="184.33333333333337" height="35"/>
+                                    <rect key="frame" x="200.66666666666663" y="15" width="184.33333333333337" height="30"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Add"/>
                                     <connections>
@@ -38,12 +39,16 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="sr7-3A-Bg3" secondAttribute="trailing" constant="8" id="6P1-eT-lxq"/>
-                                <constraint firstItem="sr7-3A-Bg3" firstAttribute="width" secondItem="NdQ-Pr-bF5" secondAttribute="width" id="CG1-i0-fzY"/>
-                                <constraint firstItem="sr7-3A-Bg3" firstAttribute="leading" secondItem="NdQ-Pr-bF5" secondAttribute="trailing" constant="8" id="Eh4-cX-GmJ"/>
-                                <constraint firstItem="NdQ-Pr-bF5" firstAttribute="centerY" secondItem="Geq-jN-0oH" secondAttribute="centerY" id="OdG-Gs-ify"/>
-                                <constraint firstItem="NdQ-Pr-bF5" firstAttribute="leading" secondItem="Geq-jN-0oH" secondAttribute="leading" constant="8" id="cYa-pu-NEl"/>
-                                <constraint firstItem="sr7-3A-Bg3" firstAttribute="centerY" secondItem="Geq-jN-0oH" secondAttribute="centerY" id="zgF-oG-DHX"/>
+                                <constraint firstItem="sr7-3A-Bg3" firstAttribute="width" secondItem="NdQ-Pr-bF5" secondAttribute="width" id="0bD-XA-Tru"/>
+                                <constraint firstItem="sr7-3A-Bg3" firstAttribute="centerY" secondItem="Geq-jN-0oH" secondAttribute="centerY" id="A4k-8H-oJJ"/>
+                                <constraint firstAttribute="bottom" secondItem="sr7-3A-Bg3" secondAttribute="bottom" constant="15" id="GT5-un-e91"/>
+                                <constraint firstAttribute="bottom" secondItem="NdQ-Pr-bF5" secondAttribute="bottom" constant="15" id="H4j-pj-gyX"/>
+                                <constraint firstItem="sr7-3A-Bg3" firstAttribute="leading" secondItem="NdQ-Pr-bF5" secondAttribute="trailing" constant="8" id="N80-QH-GIY"/>
+                                <constraint firstItem="sr7-3A-Bg3" firstAttribute="top" secondItem="Geq-jN-0oH" secondAttribute="top" constant="15" id="Trn-BS-agt"/>
+                                <constraint firstAttribute="trailing" secondItem="sr7-3A-Bg3" secondAttribute="trailing" constant="8" id="aGm-4D-Y8Z"/>
+                                <constraint firstItem="NdQ-Pr-bF5" firstAttribute="leading" secondItem="Geq-jN-0oH" secondAttribute="leading" constant="8" id="rBz-lL-mz1"/>
+                                <constraint firstItem="NdQ-Pr-bF5" firstAttribute="centerY" secondItem="Geq-jN-0oH" secondAttribute="centerY" id="z70-jr-CIt"/>
+                                <constraint firstItem="NdQ-Pr-bF5" firstAttribute="top" secondItem="Geq-jN-0oH" secondAttribute="top" constant="15" id="zxV-uO-Qn2"/>
                             </constraints>
                         </view>
                         <prototypes>
