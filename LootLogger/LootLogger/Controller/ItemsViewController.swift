@@ -10,6 +10,12 @@ import UIKit
 class ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
 
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		tableView.rowHeight = 65
+	}
+
     @IBAction func addNewItem(_ sender: UIButton) {
 		// Create a new item and add it to the store
 		let newItem = itemStore.createItem()
